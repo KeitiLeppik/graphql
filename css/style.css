@@ -78,7 +78,6 @@ main {
   background: transparent;
   border: 2px solid rgba(63, 60, 60, 0.2);
   border-radius: 30px;
-  backdrop-filter: blur(12px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px 25px;
   box-sizing: border-box; /* Ensures padding and border are included in the width */
