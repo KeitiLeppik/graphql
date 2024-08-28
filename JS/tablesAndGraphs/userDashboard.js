@@ -18,8 +18,8 @@ export async function displayAudit(ratio, given, received) {
 	auditReceived.textContent = received;
 	const auditGivenPr = document.getElementById("givenpr");
 	const auditReceivedPr = document.getElementById("receivedpr");
-	auditGivenPr.textContent = (given*100/(received+given)).toFixed(1).toString();
-	auditReceivedPr.textContent = (received*100/(received+given)).toFixed(1).toString();
+	auditGivenPr.textContent = (given*100/(received+given)).toFixed(1).toString() + "%";
+	auditReceivedPr.textContent = (received*100/(received+given)).toFixed(1).toString() + "%";
 }
 
 
