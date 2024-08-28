@@ -16,7 +16,7 @@ Progress Over Time Graph: Visual representation of progress.
 
 ## How to Run the Project
 
-Open ```keitileppik.github.io``` in your browser and log in using your intra username(email) and password.
+Open ```keitileppik.github.io/graphql``` in your browser and log in using your intra username(email) and password.
 
 ## Authors
 
