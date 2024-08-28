@@ -264,7 +264,7 @@ main {
 .axeText {
   display: none;
   font-size: 12px;
-  fill: black;
+  fill: white;
 }
 
 .axe:hover + .axeText {
