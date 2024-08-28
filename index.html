@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAPHQL</title>
+    <link rel="stylesheet" href="/css/style.css" >
+
+    <div class="banner">
+        <h1>Welcome to the GraphQL!</h1>
+    </div>
+
+</head>
+
+<body>
+
+
+    <div class="center">
+        <div class="table">
+            <form id="form">
+                <h1 class="flex">Login</h1>
+                <div class="input-box">
+                    <label for="username-email"></label><input type="text" placeholder="Username or email" required id="username-email">
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="input-box">
+                    <label for="password"></label><input type="password" placeholder="Password" required id="password">
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <div id="error-message" class="error-message"></div>
+                <button type="submit" class="btn" id="login-submit">
+                    Login <i class='bx bx-log-in'></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./JS/indexScript.js"></script>
+</body>
+
+</html>

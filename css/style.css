@@ -1,0 +1,340 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #444444;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 45px;
+  padding: 10px;
+  display: inline;
+}
+
+h2 {
+  font-size: 35px;
+  padding: 15px;
+}
+
+p {
+  margin: 20px;
+}
+
+.banner {
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#username {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+main {
+  width: 100%;
+  margin-left: 200px;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-wrap: wrap; /* Allows the tabels to wrap to the next line */
+  padding: 10px; /* Adds padding around the main container */
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+/* table and Input Box Styles */
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(63, 60, 60, 0.2);
+  border-radius: 30px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 25px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  margin: 10px; /* Adds margin around each table */
+}
+
+.table h1 {
+  font-size: 23px;
+  color: white;
+}
+
+.progress-size {
+  width: 140vh;
+  height: 654px;
+}
+
+/* login box */
+
+.table .input-box {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  margin: 30px 0;
+  color: white;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: white;
+  outline: none;
+  border: 2px solid;
+  border-radius: 40px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.199);
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: rgba(33, 31, 31, 0.667);
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.table .btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Flex Containers */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex.space-between {
+  justify-content: space-between;
+}
+
+/* XP Display */
+.xpDisplay {
+  display: flex;
+  justify-content: space-between;
+}
+
+.module-name,
+.module-level,
+.module-xp {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.3s ease-in-out;
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: gold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #232526;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout {
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  background-color: white;
+}
+
+/* Audit Chart */
+#audit-ratio {
+  padding: 30px 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5vw;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#audit-chart {
+  margin: 0 auto;
+  transform: rotate(-90deg);
+  background: #444;
+  border-radius: 50%;
+  display: block;
+}
+
+.pie {
+  fill: cornflowerblue;
+  stroke: gold;
+  stroke-width: 200;
+  stroke-dasharray: 0 628;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 10px;
+}
+
+.dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gold;
+}
+
+.dot {
+  background-color: cornflowerblue;
+}
+
+.graph .labels.x-labels,
+.graph .labels.y-labels {
+  font-size: 13px;
+  fill: #ecf0f1;
+}
+
+.labels .label-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  fill: #ecf0f1;
+}
+
+
+.axeText {
+  display: none;
+  font-size: 12px;
+  fill: black;
+}
+
+.axe:hover + .axeText {
+  display: block;
+}
+
+.line{
+  stroke: cornflowerblue;
+}
+
+.info-container {
+    width: 35%;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.info-container img {
+    padding: 30px;
+    height: 400px;
+    align-items: center;
+}
+
+.inner-container {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    display: none;
+}
+
+.info-container.rotated .front {
+    display: none;
+}
+
+.info-container.rotated .back {
+    display: block;
+}
+
+.info-container.rotated .inner-container.front {
+    animation: rotateForward 1s forwards;
+}
+
+.info-container.rotated .inner-container.back {
+    animation: rotateBackward 1s forwards;
+}
+#received-title{
+  color: gold;
+}
+
+#given-title{
+  color: cornflowerblue;
+}

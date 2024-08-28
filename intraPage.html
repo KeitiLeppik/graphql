@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAPHQL</title>
+        <link rel="stylesheet" href="/css/style.css" >
+</head>
+
+<body>
+    <header>
+        <h3 id="username"></h3>
+        <button id="logout" value="LOG OUT" class="btn logout">Logout</button>
+    </header>
+
+	<main id="main">
+
+
+		<!-- <div class="info-container" id="clickable-container">
+			<div class="inner-container front">
+				<h1>User info</h1>
+				<img src="/css/user.png" alt="User Image" id="user-image">
+			</div>
+			<div class="inner-container back" id="user-info">
+			</div>
+		</div> -->
+
+
+		<div class="table">
+			<section id="levels">
+				<div class="xpDisplay"></div>
+				<div class="xpDisplay"></div>
+				<div class="xpDisplay"></div>
+			</section>
+		</div>
+		
+		<div class="table">
+				<section id="auditRatio">
+					<div class="auditL">
+						<h1>AUDIT RATIO</h1>
+						<div class="legend">
+							<h1 id="ratio"></h1>
+						</div>
+					</div>
+	
+					<figure>
+						<svg
+							id="audit-chart"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							class="pie-chart"
+							height="200"
+							width="200"
+							aria-labelledby="title"
+							role="graphics-document"
+						></svg>
+					</figure>
+
+					<div class="audits">
+						<h1 id="given-title"> Given</h1> <h1>  / </h1> <h1 id="received-title">Received:</h1>
+						<div class="legend">
+							<div class="dots dot"></div>
+							<h3 id="given"></h3><h3 id="givenpr"></h3>%
+							<div class="dots"></div>
+							<h3 id="received"></h3><h3 id="receivedpr"></h3>%
+						</div>
+					</div>
+				</section>
+		</div>
+		
+		<div class="table progress-size">
+				<section id="progress-section">
+					<div id="progress" class="progress-div">
+						<div class="progress-container">
+							<figcaption>PROGRESS OVER TIME</figcaption>
+							<figure id="progress-figure">
+								<svg
+									id="progress-chart"
+									version="1.1"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									class="graph"
+									width="1200"
+									height="600"
+									aria-labelledby="title"
+									role="graphics-document"
+								></svg>
+							</figure>
+						</div>
+					</div>
+				</section>
+		</div>
+	</main>
+
+    <script type="module" src="./JS/intraPageScript.js"></script>
+</body>
+
+</html>
